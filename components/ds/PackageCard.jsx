@@ -5,7 +5,7 @@ import {Tag} from './core.jsx';
 
 function useHover(){const[h,s]=React.useState(false);return[h,{onMouseEnter:()=>s(true),onMouseLeave:()=>s(false)}]}
 
-export function PackageCard({name,price,unit='per guest',summary,includes=[],featured=false,ctaLabel='Request this package',ctaHref,onSelect,style}){
+export function PackageCard({name,price,unit='lorem ipsum',summary,includes=[],featured=false,ctaLabel='Lorem ipsum',ctaHref,onSelect,style}){
   const[hov,bind]=useHover();
   return <div {...bind} style={{display:'flex',flexDirection:'column',gap:'var(--space-6)',padding:'var(--space-7)',
     background:featured?'var(--surface-inverse)':'var(--surface-card)',color:featured?'var(--text-on-inverse-muted)':'var(--text-body)',
@@ -13,7 +13,7 @@ export function PackageCard({name,price,unit='per guest',summary,includes=[],fea
     boxShadow:hov?'var(--shadow-2)':'none',transform:hov?'var(--lift-hover)':'none',
     transition:'box-shadow var(--dur-base) var(--ease-standard),transform var(--dur-base) var(--ease-standard)',...style}}>
     <div style={{display:'flex',flexDirection:'column',gap:'10px'}}>
-      {featured&&<Tag tone="rose" style={{alignSelf:'flex-start'}}>Most requested</Tag>}
+      {featured&&<Tag tone="rose" style={{alignSelf:'flex-start'}}>Lorem ipsum</Tag>}
       <span style={{fontFamily:'var(--font-display)',fontWeight:300,fontSize:'2rem',lineHeight:1.1,color:featured?'var(--text-on-inverse)':'var(--text-display)'}}>{name}</span>
       {summary&&<span style={{font:'var(--type-body-s)'}}>{summary}</span>}
     </div>
