@@ -4,8 +4,8 @@ import {Instagram,Facebook,Mail} from 'lucide-react';
 import {Divider} from './ds/core.jsx';
 
 const cols=[
-  {title:'Lorem',links:[['Ipsum dolor','/services'],['Sit amet','/services'],['Consectetur','/services']]},
-  {title:'Ipsum',links:[['Adipiscing','/menus'],['Elit sed','/services'],['Do eiusmod','/contact#service-area'],['Tempor','/contact']]}
+  {title:'Services',links:[['Weddings','/services'],['Corporate','/services'],['Private parties','/services']]},
+  {title:'Explore',links:[['Sample menus','/menus'],['Pricing','/services'],['Service area','/contact#service-area'],['Contact','/contact']]}
 ];
 const social=[[Instagram,'Instagram'],[Facebook,'Facebook'],[Mail,'Email']];
 const eyebrow={font:'var(--type-eyebrow)',letterSpacing:'var(--tracking-eyebrow)',textTransform:'uppercase',color:'var(--smoke-400)'};
@@ -24,9 +24,9 @@ export function Footer(){
           {c.links.map(([label,href])=><Link key={label} href={href} style={{font:'var(--type-body-s)',color:'var(--text-on-inverse)',textDecoration:'none',border:0}}>{label}</Link>)}
         </div>)}
         <div style={{display:'flex',flexDirection:'column',gap:'12px'}}>
-          <span style={eyebrow}>Lorem</span>
-          <span style={{font:'var(--type-body-s)',color:'var(--text-on-inverse)'}}>lorem@ipsum.com</span>
-          <span style={{font:'var(--type-body-s)',color:'var(--text-on-inverse)'}}>(555) 000-0000</span>
+          <span style={eyebrow}>Contact</span>
+          <span style={{font:'var(--type-body-s)',color:'var(--text-on-inverse)'}}>hello@dtbartending.com</span>
+          <span style={{font:'var(--type-body-s)',color:'var(--text-on-inverse)'}}>(555) 014-2280</span>
           <div style={{display:'flex',gap:'12px',marginTop:'6px'}}>
             {social.map(([Icon,label])=><a key={label} href="#" aria-label={label} style={{color:'var(--cream-50)',border:0}}><Icon size={18} strokeWidth={1.5}/></a>)}
           </div>
@@ -36,7 +36,7 @@ export function Footer(){
     <div style={{maxWidth:'var(--container)',margin:'var(--space-8) auto 0'}}>
       <Divider tone="inverse"/>
       <div className="footer-legal">
-        <span>© 2026 Lorem Ipsum</span><span>Dolor sit amet · Consectetur</span>
+        <span>© 2026 D&T Mobile Bartending</span><span>Licensed &amp; insured · TABC certified</span>
       </div>
     </div>
   </footer>;

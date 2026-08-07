@@ -32,9 +32,9 @@ const SNAP=(t)=>cubicBezier(t,0.22,1.28,0.36,1);
 
 export function GalleryStack({
   items=[
-    {label:'Lorem ipsum',src:'/assets/images/drinks1.jpg'},
-    {label:'Dolor sit',src:'/assets/images/drinks2.jpg'},
-    {label:'Amet elit',src:'/assets/images/drinks3.jpg'}
+    {label:'Citrus crush',src:'/assets/images/drinks1.jpg'},
+    {label:'Garden jars',src:'/assets/images/drinks2.jpg'},
+    {label:'Signature pours',src:'/assets/images/drinks3.jpg'}
   ]
 }){
   const wrapRef=React.useRef(null);

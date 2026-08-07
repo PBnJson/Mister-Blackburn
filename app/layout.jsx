@@ -7,7 +7,7 @@ const cormorant=Cormorant_Garamond({subsets:['latin'],weight:['300','400','500',
 const jost=Jost({subsets:['latin'],weight:['200','300','400','500','600'],variable:'--font-jost',display:'swap'});
 
 export const metadata={
-  title:'D&T Mobile Bartending — Lorem ipsum dolor',
+  title:'D&T Mobile Bartending — The bar comes to you',
   description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 };
 

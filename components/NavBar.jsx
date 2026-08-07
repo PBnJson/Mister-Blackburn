@@ -39,7 +39,7 @@ export function NavBar(){
           style={{font:'400 12px/1 var(--font-sans)',letterSpacing:'var(--tracking-button)',textTransform:'uppercase',
           color:pathname===l.href?(inv?'var(--rose-300)':'var(--rose-600)'):fg,textDecoration:'none',
           borderBottom:'1px solid '+(pathname===l.href?'currentColor':'transparent'),paddingBottom:'4px',transition:'var(--transition-control)'}}>{l.label}</Link>)}
-        <Button size="sm" variant={inv?'inverse-outline':'outline'} href="/contact">Lorem ipsum</Button>
+        <Button size="sm" variant={inv?'inverse-outline':'outline'} href="/contact">Request a quote</Button>
       </nav>
       <span className="nav-burger">
         <IconButton icon={<Menu size={20} strokeWidth={1.5}/>} label="Open menu" variant={inv?'inverse':'ghost'} onClick={()=>setOpen(true)} style={{color:fg}}/>
@@ -56,7 +56,7 @@ export function NavBar(){
       <nav className="nav-menu-links" aria-label="Mobile">
         {links.map(l=><Link key={l.href} href={l.href} className="nav-menu-link" data-active={pathname===l.href} onClick={()=>setOpen(false)}>{l.label}</Link>)}
       </nav>
-      <Button variant="secondary" size="lg" fullWidth href="/contact" onClick={()=>setOpen(false)}>Lorem ipsum</Button>
+      <Button variant="secondary" size="lg" fullWidth href="/contact" onClick={()=>setOpen(false)}>Request a quote</Button>
     </div>}
   </>;
 }

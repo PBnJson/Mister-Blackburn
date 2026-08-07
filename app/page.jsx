@@ -8,9 +8,9 @@ import {GalleryStack} from '../components/GalleryStack.jsx';
 import {menu} from '../lib/data.js';
 
 const services=[
-  ['Lorem ipsum','Dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.'],
-  ['Amet consectetur','Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'],
-  ['Adipiscing elit','Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.']
+  ['Weddings','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.'],
+  ['Corporate','Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'],
+  ['Private parties','Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.']
 ];
 
 /* Placeholder hero — swap for a real D&T pour/event shot when ready.
@@ -38,11 +38,11 @@ export default function HomePage(){
       <div className="hero-inner">
         <Eyebrow tone="inverse">Lorem ipsum dolor sit amet</Eyebrow>
         <span className="hero-rule" aria-hidden="true"/>
-        <h1 style={{font:'var(--type-display-xl)',letterSpacing:'var(--tracking-display)',color:'var(--cream-50)',maxWidth:'14ch',margin:0}}>Lorem ipsum dolor sit.</h1>
+        <h1 style={{font:'var(--type-display-xl)',letterSpacing:'var(--tracking-display)',color:'var(--cream-50)',maxWidth:'14ch',margin:0}}>The bar comes to you.</h1>
         <p style={{font:'var(--type-lead)',color:'var(--text-on-inverse-muted)',maxWidth:'52ch'}}>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
         <div className="hero-actions">
-          <Button variant="secondary" size="lg" href="/contact">Lorem ipsum</Button>
-          <Button variant="inverse-outline" size="lg" href="/menus">Dolor sit amet</Button>
+          <Button variant="secondary" size="lg" href="/contact">Request a quote</Button>
+          <Button variant="inverse-outline" size="lg" href="/menus">View sample menus</Button>
         </div>
       </div>
     </section>
@@ -59,14 +59,14 @@ export default function HomePage(){
 
     <section className="section"><div className="inner">
       <Reveal>
-        <SectionHeading eyebrow="Lorem ipsum" title="Dolor sit amet consectetur adipiscing" lede="Elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud."/>
+        <SectionHeading eyebrow="What we do" title="Every detail behind the bar, handled" lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
       </Reveal>
       <RevealStagger className="grid-3" style={{marginTop:'var(--space-8)'}} delayStep={85}>
         {services.map(([t,d])=>
         <Card key={t} interactive padding="var(--space-7)"><div style={{display:'flex',flexDirection:'column',gap:'12px'}}>
           <h3 style={{font:'var(--type-title)',margin:0}}>{t}</h3>
           <p style={{font:'var(--type-body-s)',color:'var(--text-muted)'}}>{d}</p>
-          <Link href="/services" style={{font:'500 12px/1 var(--font-sans)',letterSpacing:'var(--tracking-button)',textTransform:'uppercase',alignSelf:'flex-start',marginTop:'6px'}}>Lorem →</Link>
+          <Link href="/services" style={{font:'500 12px/1 var(--font-sans)',letterSpacing:'var(--tracking-button)',textTransform:'uppercase',alignSelf:'flex-start',marginTop:'6px'}}>Explore →</Link>
         </div></Card>)}
       </RevealStagger>
     </div></section>
@@ -75,8 +75,8 @@ export default function HomePage(){
       <div className="inner split">
         <Reveal variant="left">
           <div style={{display:'flex',flexDirection:'column',gap:'var(--space-5)'}}>
-            <SectionHeading tone="inverse" eyebrow="Lorem ipsum" title="Dolor sit amet consectetur" lede="Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-            <Button variant="inverse-outline" style={{alignSelf:'flex-start'}} href="/menus">Lorem ipsum dolor</Button>
+            <SectionHeading tone="inverse" eyebrow="Tonight's board" title="A menu written for your night" lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
+            <Button variant="inverse-outline" style={{alignSelf:'flex-start'}} href="/menus">See full sample menu</Button>
           </div>
         </Reveal>
         <Reveal variant="right" delay={120}>
@@ -105,13 +105,13 @@ export default function HomePage(){
       <Reveal>
         <div className="cta-band" style={{background:'var(--surface-inverse)'}}>
           <div style={{display:'flex',flexDirection:'column',gap:'10px',maxWidth:'58ch'}}>
-            <span style={{font:'var(--type-eyebrow)',letterSpacing:'var(--tracking-eyebrow)',textTransform:'uppercase',color:'var(--rose-300)'}}>Lorem ipsum</span>
-            <h2 style={{fontFamily:'var(--font-display)',fontWeight:300,fontSize:'var(--size-display-s)',lineHeight:1.15,margin:0,color:'var(--text-on-inverse)'}}>Dolor sit amet.</h2>
-            <p style={{font:'var(--type-body)',color:'var(--text-on-inverse-muted)'}}>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <span style={{font:'var(--type-eyebrow)',letterSpacing:'var(--tracking-eyebrow)',textTransform:'uppercase',color:'var(--rose-300)'}}>Bottle concierge</span>
+            <h2 style={{fontFamily:'var(--font-display)',fontWeight:300,fontSize:'var(--size-display-s)',lineHeight:1.15,margin:0,color:'var(--text-on-inverse)'}}>Skip the store run.</h2>
+            <p style={{font:'var(--type-body)',color:'var(--text-on-inverse-muted)'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div className="hero-actions" style={{flexWrap:'wrap',flex:'0 0 auto'}}>
-            <Button variant="secondary" size="lg" href="/contact">Lorem ipsum</Button>
-            <Button variant="inverse-outline" size="lg" href="/services">Dolor sit amet</Button>
+            <Button variant="secondary" size="lg" href="/contact">Contact us for details</Button>
+            <Button variant="inverse-outline" size="lg" href="/services">See how it works</Button>
           </div>
         </div>
       </Reveal>
@@ -120,7 +120,7 @@ export default function HomePage(){
     <section className="section gallery-section" style={{paddingTop:0,paddingBottom:0}}>
       <div className="inner">
         <Reveal>
-          <SectionHeading align="center" eyebrow="Lorem ipsum" title="Dolor sit amet"/>
+          <SectionHeading align="center" eyebrow="From recent nights" title="Behind the bar"/>
         </Reveal>
       </div>
       <GalleryStack/>
@@ -128,7 +128,7 @@ export default function HomePage(){
 
     <section className="section"><div className="inner-narrow">
       <Reveal variant="fade">
-        <Testimonial quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." author="Lorem & Ipsum" detail="Dolor · Sit amet, 140 guests"/>
+        <Testimonial quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." author="Maya & Ellis" detail="Wedding · The Loom, 140 guests"/>
       </Reveal>
     </div></section>
 
@@ -136,10 +136,10 @@ export default function HomePage(){
       <Reveal>
         <div className="cta-band">
           <div style={{display:'flex',flexDirection:'column',gap:'8px'}}>
-            <h2 style={{font:'var(--type-display-m)',margin:0}}>Lorem ipsum dolor.</h2>
-            <p style={{font:'var(--type-body)',color:'var(--ink-600)'}}>Sit amet consectetur adipiscing elit sed do eiusmod.</p>
+            <h2 style={{font:'var(--type-display-m)',margin:0}}>Your date is waiting.</h2>
+            <p style={{font:'var(--type-body)',color:'var(--ink-600)'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <Button size="lg" className="cta-btn" href="/contact">Lorem ipsum</Button>
+          <Button size="lg" className="cta-btn" href="/contact">Check availability</Button>
         </div>
       </Reveal>
     </div></section>
